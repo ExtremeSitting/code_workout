@@ -12,7 +12,7 @@ dictionary-sample.py
 
 #### Goals:
 1. Parse the dictionary file (american-english) and only print words that are greater than 4 characters
-2. Parse the dictionary file and print the length and number of words of that length in csv
+2. Parse the dictionary file and print the length and number of words of that length in csv. *Each line should be unique.*
 	```
     <num of chars in word>,<num of words of that length>
    	3,300
