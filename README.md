@@ -12,6 +12,7 @@ I'll provide resource scripts in any language that feels right or is convenient.
 * **For the bold.** Some challenges will include a *bonus* section. This section is inteded to challenge those who found the other goals easy or just want more.
 * **Text manipulation.** A lot of challenges may deal with general text manipulation. I find that a lot of administrative tasks fall in this category, but don't be fooled. You can easily take the lessons learned here and apply them in a different way to fit a more *real world* scenario for you.
 * **BUGS!** If there are bugs in the resources (and you can provide proof), let me know by submitting an issue or maybe a pull request if you want to contribute.
+* **Changes.** This repo and all the challenges are subject to change as I improve them. If you notice a new commit log for one of the older challenges, you should review the change and update your answer to fit the situation if it doesn't already. All changes will reflect the original intent of the challenge so they wont be big changes.
 
 ## work_flow
 
