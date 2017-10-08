@@ -20,3 +20,10 @@ I'll provide resource scripts in any language that feels right or is convenient.
 * Do your work in the *answers* branch.
 
 The answer branch is for you. You'll never be required to submit it or share it. I suggest keeping your notes and scripts in the weekly challenge directory. If you want to make changes to the resources, make a copy or you'll risk merge conflicts when you merge *master* to *answers*.
+
+#### tools
+The git-up script is a handy way to keep your fork and branches updated. You can drop it in /usr/local/bin/ (owned by root with executable permissions) and run it with like this:
+```bash
+$ git up
+```
+If you want it to do a little more, you can un-comment the two lines at the bottom. When you run it, it will change to your answers branch and merge the changes from master.
