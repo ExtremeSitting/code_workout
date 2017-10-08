@@ -9,7 +9,7 @@ I'll provide resource scripts in any language that feels right or is convenient.
 * **This should challenge you.** I indent to provide challenges that are possible, but difficult. Most challenges will start easy, or have easy goals, but the difficulty should escalate quickly. If you find the challenges too easy then you may want to choose a language you aren't as comfortable with or maybe you're just too good.
 * **Goals are unordered.** The goals are presented in the order that I first thought of them. Feel free to jump around.
 * **For the bold.** Some challenges will include a *bonus* section. This section is inteded to challenge those who found the other goals easy or just want more.
-* **Text manipulation.** A lot of challenegs may deal with general text manipulation. I find that a lot of administrative tasks fall in this category, but don't be fooled. You can easily take the lessons learned here and apply them in a different way to fit a more *real world* scenario for you.
+* **Text manipulation.** A lot of challenges may deal with general text manipulation. I find that a lot of administrative tasks fall in this category, but don't be fooled. You can easily take the lessons learned here and apply them in a different way to fit a more *real world* scenario for you.
 * **BUGS!** If there are bugs in the resources (and you can provide proof), let me know by submitting an issue or maybe a pull request if you want to contribute.
 
 ## work_flow
