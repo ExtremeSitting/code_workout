@@ -33,6 +33,6 @@ $ git up
 
 Make sure to add *upstream* as a remote:
 ```bash
-$ git remote add upstream https://github.com/TheCodeWorkout/code_workout.git
+$ git remote add upstream https://github.com/ExtremeSitting/code_workout.git
 ```
 If you want it to do a little more, you can un-comment the two lines at the bottom. When you run it, it will change to your answers branch and merge the changes from master.
