@@ -12,6 +12,14 @@ def not_found(error):
     return make_response(jsonify({'error': 'Not found'}), 404)
 
 
+def find_thing(thing_id):
+    thing = [thing for thing in things if thing['id'] == thing_id]
+    if not thing:
+        abort(404)
+    else:
+        return thing[0]
+
+
 @app.route('/things', methods=['GET'])
 def return_things():
     if not things:
@@ -22,10 +30,8 @@ def return_things():
 
 @app.route('/things/<int:thing_id>', methods=['GET'])
 def get_thing(thing_id):
-    thing = [thing for thing in things if thing['id'] == thing_id]
-    if len(thing) == 0:
-        abort(404)
-    return jsonify({'thing': thing[0]})
+    thing = find_thing(thing_id)
+    return jsonify({'thing': thing})
 
 
 @app.route('/things', methods=['POST'])
@@ -40,7 +46,7 @@ def create_thing():
         'id': new_id,
         'name': request.json['name'],
         'value': request.json.get('value', None),
-        'author': request.json.get('author', None)
+        'device': request.json.get('device', None)
     }
     things.append(thing)
     return jsonify({'thing': thing}), 201
@@ -48,11 +54,8 @@ def create_thing():
 
 @app.route('/things/<int:thing_id>', methods=['DELETE'])
 def remove_thing(thing_id):
-    thing = [thing for thing in things if thing['id'] == thing_id]
-    if len(thing) == 0:
-        abort(404)
-    things.remove(thing)
-    return 201
+    things.remove(find_thing(thing_id))
+    return jsonify({'DELETE': thing_id}), 201
 
 
 if __name__ == '__main__':
