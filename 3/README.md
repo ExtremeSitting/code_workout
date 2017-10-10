@@ -15,7 +15,7 @@ thing-app.py
 sysinfo.py
 
 #### Process:
-Review the thing_app.py script. It is a very small and simple api. Make thing_app.py executable and run it without arguments. It will need to stay running in a console while you work with it in another console. It supports `GET`, `POST`, and `DELETE` requests. The *name* key is the only required key when making a `POST`.
+Review the thing_app.py script. It is a very small and simple api. It supports `GET`, `POST`, and `DELETE` requests. The *name* key is the only required key when making a `POST`.
 
 Example `POST` data:
 ```json
@@ -47,10 +47,13 @@ Run:
 mkvirtualenv code_workout
 workon code_workout
 pip install flask requests
+python thing_app.py
 ```
-Then:
+Then in another console:
 
 `python sysinfo.py` to preload things.
+
+The `thing_app.py` script will need to stay running in a console while you interact with it in another console.
 
 #### Goals:
 Use a name that is descriptive of the value you provide in all posted data.
