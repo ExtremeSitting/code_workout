@@ -26,11 +26,6 @@ Example `POST` data:
 }
 ```
 
-* `GET` requests to `http://localhost:5000/things` will return all things posted.
-* `GET` requests to `http://localhost:5000/things/<id>` will return the thing assigned to that id.
-* `POST` requests to `http://localhost:5000/things` will load the provided data in the app and will return the full record generated.
-* `DELETE` requests to `http://localhost:5000/things/<id>` will delete the thing from the list of things.
-
 |Verb|URI|Action|
 --- | --- | --- |
 GET|`http://localhost:5000/things`|Return all things
